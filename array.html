@@ -1,0 +1,35 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            //Initializing Array
+            var listArray= ['arun', 'sinchana', 1990, 'vindya', 'varshini'];
+            var objectArray= new Array(1990,1985,1993);
+            console.log(listArray);
+            console.log(listArray[2]);
+            console.log(listArray.length);
+            
+            //Mutate Array Data
+            listArray[1] = 'karthik';
+            console.log(listArray);
+            listArray[listArray.length] = 'karthik';
+            console.log(listArray.length);
+            
+            //Different Data Types 
+            var parinitha = ['yogashree','Akshatha', 1990, 'designer', false];
+            parinitha.push('sowmya');
+            parinitha.pop();
+            parinitha.unshift('Sowmya');
+            parinitha.shift();
+            console.log(parinitha.indexOf(1990));
+            console.log(parinitha);
+            var isDesigner = parinitha.indexOf('designer') === -1 ? ' parinitha is not a designer' : ' Parinitha is a designer';
+            console.log(isDesigner);
+        </script>
+    </body>
+</html>
+
+
+
+
+    

@@ -1,0 +1,89 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            //function statements
+            function calculateAge(birthYear)
+                {
+                    return 2019-birthYear;
+                }
+            var ageJohn = calculateAge(1980);
+            var ageMike = calculateAge(1990);
+            var ageArnav = calculateAge(1976);
+            console.log(ageJohn, ageMike, ageArnav);
+
+            function yearsUntilRetirement(year,firstname){
+                debugger;
+                var age = calculateAge(year);
+                var retirement = 65-age;
+                if(retirement > 0) {
+                   console.log(firstname + ' retires in ' + retirement + ' years.');
+                }
+                else {
+                    console.log (firstname + ' is already retired');
+                }
+            }
+            yearsUntilRetirement(1948, 'john');
+            yearsUntilRetirement (1990 , 'mike');
+            yearsUntilRetirement (1956, 'Arnav'); 
+
+            //function expressions
+            // var whatDoYouDo = function(job, firstname){
+            //     switch(job) {
+            //         case 'teacher' :
+            //             return firstname + ' teaches how to code';
+            //         case 'driver' :
+            //             return firstname + ' drives car for Uber';
+            //         case 'designer' :
+            //             return firstname + ' designs beautiful websites';
+            //         default:
+            //             return firstname +  ' does something else';
+            //     }
+            // }
+            // console.log(whatDoYouDo('teacher','varsha'));
+            // console.log(whatDoYouDo('driver','Nisha'));
+            // console.log(whatDoYouDo('designer','Roma'));
+            // console.log(whatDoYouDo('doctor','Vihan'));
+
+            //another example for statements and expressions
+            //  function Myfuc() { 
+            //         if(true){
+            //             console.log('true ===',true)
+            //             a=true
+            //         }
+            //         return a
+            //     }
+            //     a = Myfuc()
+            //     console.log('a ===', a)
+            //     console.log(whatDoYouDo('teacher', 'john'));
+            //     whatDoYouDo('driver', 'mike');
+            //     whatDoYouDo('retirement', 'Arnav'); 
+           
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class = "MorningPage">
+            <h1>Hi gud morning</h1>
+            <p>Chilled climate not in the mood to work</p>
+        </div>
+        <div class="climatePage">
+            <h1>Hello Everyone</h1>
+            <p>Clumsy weather so how is the josh??</p>
+        </div>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+    </body>
+</html>
+<script>
+    $(document).ready(function(){
+        $(".climatePage").hide();
+        $("#hide").click(function(){
+            // debugger;
+            $(".MorningPage").hide();
+        });
+        $("#show").click(function(){
+            // debugger;
+            $(".climatePage").show();
+        });
+    });
+</script>

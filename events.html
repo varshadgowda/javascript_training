@@ -1,0 +1,31 @@
+<html>
+    <head></head>
+    <body onload="loadImage()">
+        <script>
+            function alertText(){
+                window.alert("Hi gud morning")
+            }
+            alertText();
+            function clickEvent(){
+                document.write("Hi Good Afternoon");
+            }
+            function sayHello(name, age){
+                document.write(name + ' is' + age + 'years old');
+            }
+            function mouseover(){
+                document.getElementById("demo").innerHTML="parinitha";
+            }
+            function mouseout(){
+                document.getElementById("demo").innerHTML="yogashree";
+            }
+            function loadImage(){
+                window.location = "C:\Users\varsha d gowda\Desktop\practise\image\wine.jpg";
+            }
+        </script>
+        <input type="button" onclick="clickEvent()" value="click">
+        <input type="button" onclick="alertText()" value ="Click me">
+        <input type="button" onclick="sayHello('varsha', 12)" value="Click me">
+        <p id="demo" onmouseover="mouseover()" onmouseout="mouseout()">Hello world</p>
+        <p id="demo1" onmouseover="mouseover()" onmouseout="mouseout()">Hello world</p>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      //arithmetic operation
+      var a = "Hello World <br/>"; b = "Welcome <br/>"; c = "Javascript <br/>";
+      var d = "Hello World"
+      var e = "Welcome to Javascript"
+      document.write(a,b,c);
+      document.write(d+ ' ' +e);
+    </script>
+    
+      //ternary operators
+      <h1>Demo: JavaScript Ternary Operators</h1>
+      <p id="p1"></p>
+      <p id="p2"></p>
+      <script>
+        var a = 10, b = 5;
+        var c = a > b? a : b; 
+        var d = a > b? b : a; 
+        document.getElementById("p1").innerHTML = c;
+        document.getElementById("p2").innerHTML = d;
+
+        //switch statements
+        var foo = 1;
+            var output = 'Output: ';
+            switch (foo) {
+            case 0:
+                output += 'So ';
+            case 1:
+                output += 'What ';
+                output += 'Is ';
+            case 2:
+                output += 'Your ';
+            case 3:
+                output += 'Name';
+            case 4:
+                output += '?';
+                console.log(output);
+                break;
+            case 5:
+                output += '!';
+                console.log(output);
+                break;
+            default:
+                console.log('Please pick a number from 0 to 5!');
+            } 
+      </script>
+  </body>
+</html>
+

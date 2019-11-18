@@ -1,0 +1,31 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            var scoreJohn = (89 + 120 + 103) / 3;
+            var scoreMike = (116 + 94 + 123) / 3;
+            var scoreMary = (97 + 134 + 105) / 3;
+            console.log(scoreJohn, scoreMike, scoreMary);
+
+            if(scoreJohn > scoreMike) {
+                console.log('John\'s Team wins with ' +scoreJohn + 'points');
+            }else if(scoreMike > scoreJohn) {
+                console.log('Mike\'s Team wins with ' +scoreJohn + ' points');   
+            }
+            else {
+                console.log('there might be a draw');
+            }
+            if(scoreJohn > scoreMike && scoreJohn > scoreMary)
+            {
+                console.log('John\'s Team wins with ' +scoreJohn + 'points');
+            }else if (scoreMike > scoreJohn && scoreMike > scoreMary){
+                console.log('Mike\'s Team wins with ' +scoreMike + ' points');
+            }else if (scoreMary > scoreJohn && scoreMary >scoreMike) {
+                console.log('Mary\'s Team wins with ' +scoreMary + ' points');
+            }
+            else {
+                console.log('there might be a draw');
+            }
+        </script>
+    </body>
+</html>

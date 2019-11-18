@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="div1">
+            <p>This is a paragraph.</p>
+            <p>This is another paragraph.</p>
+        </div>
+        <div id="div2">
+            <h4>I Want to Test This Application</h4>
+        </div>
+        <script>
+            debugger;
+            var para = document.createElement("p");
+            var node = document.createTextNode("Sure You Can");
+            para.appendChild(node);
+            var element = document.getElementById("div2");
+            element.appendChild(para);
+        </script>
+    </body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+    <body>
+        <h2>JavaScript Functions</h2>
+        <p>This example calls a function which performs a calculation, and returns the result:</p>
+        <p id="demo"></p>
+        <script>
+            //multiplcation 
+            function myFunction(p1, p2) {
+                debugger;
+            return p1 * p2;
+            }
+            document.getElementById("demo").innerHTML = myFunction(4, 3);
+
+            //let and var keywords
+            function myFunction(){
+                var varVariable = "Hey! How are you? I am var variable.";
+                {
+                    let letVariable = "Hey! What's up? I am let variable.";
+                    console.log(letVariable);
+                }
+                console.log(varVariable);
+                for(var i=0;i<10;i++){
+                    console.log(i); //i is visible thus is logged in the console as 0,1,2,....,9
+                    }
+                console.log(i); //throws an error as "i is not defined" because i is not visible
+            }
+        </script>
+    </body>
+</html> -->

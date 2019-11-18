@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Form Validation: Check Email Address </title>
+  <style>body{font-family:Verdana;}</style>
+</head>
+  
+<body>
+<script>
+  function check_Email(mail){
+      debugger;
+    var regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if(regex.test(mail.myemail.value)){
+        debugger;
+    //   return true;
+      alert("Congrats! This is a valid Email email");
+      
+    }
+    else{
+      alert("This is not a valid email address");
+      return false;
+    }
+  }
+      
+</script>
+  <form name="formvalidate" method="post" onSubmit="return check_Email(this)" >
+          
+  Your Email Address : 
+   <input type="text" size="40" name="myemail" /> 
+          
+  <input type="submit" value="Submit" />
+  
+ </form>         
+  
+          
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!-- const person = {
+    isHuman: false,
+    
+    printIntroduction: function () {
+      console.log(`My name is ${this.name}. Am I human? ${this.isHuman}`);
+    }
+  };
+  console.log(person.isHuman)
+  person.name= "varsha";
+  console.log(person.printIntroduction());
+  const personONE = {
+     printIntroduction: function () {
+      console.log(`My name is ${this.firstname}. Am I human? ${this.lastname}`);
+    }
+  }
+  
+  const me = Object.create(personONE);
+  
+  me.firstname = "Matthew"; // "name" is a property set on "me", but not on "person"
+  me.lastname = "true"; // inherited properties can be overwritten
+  
+  me.printIntroduction();
+  // expected output: "My name is Matthew. Am I human? true" -->
+
+
+<html>
+    <head></head>
+    <body onload="outer()">
+        <script>
+            // function outer() {
+            //     var b = 10;   
+            //         function inner() {              
+            //            var a = 20;          
+            //            console.log(a+b);    
+            //         }   
+            //         return inner;
+            //     }
+            //     var X = outer(); //outer() invoked the first timevar Y = outer(); //outer() invoked the second time
+            //     console.log(X);
+            //     var Y = outer();
+            //     X(); // X() invoked the first time
+            //     Y(); 
+                // X() invoked the second time
+                // X(); 
+                // X() invoked the third time
+
+
+                function outer() {
+                    debugger;
+                    var b = 10;
+                    var c = 100;
+                    function inner() { 
+                        debugger;  
+                        var a = 20; 
+                        console.log("a= " + a + " b= " + b);
+                        a++;         
+                        b++;
+                        console.log("a= " + a + " b= " + b);
+                    }
+                    return inner;
+                }
+                var X = outer();  // outer() invoked the first time
+                // var Y = outer();  // outer() invoked the second time
+                // console.log(X);
+                    //end of outer() function executions
+                    X(); // X() invoked the first time
+                    X(); // X() invoked the second time
+                    X(); // X() invoked the third time
+
+                    Y(); // X() invoked the first time
+                    Y(); // X() invoked the second time
+                    Y(); // X() invoked the third time
+        </script>
+    </body>
+</html>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

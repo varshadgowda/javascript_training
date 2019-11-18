@@ -1,0 +1,80 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head></head>
+  <body onload="myFunction()">
+    <h1>Hello World!</h1>
+     <script> -->
+      <!-- // function myFunction() {
+      //   alert("Hi Good After");
+      // }
+      // var arrayNames = ['Akshatha', 'Jnanedra', 'Karthik', 'Parinitha', 'Sinchana', 'Sowmya', 'Varshini', 'Vikas', 'Vindya'];
+      // arrayNames[1] = 'Arun';
+      // arrayName = 'Varsha'
+      // arrayNames.pop('Yogashree');
+      // console.log([arrayName.length]);
+      // arrayNames.pop();
+      // console.log(arrayNames);
+      // arrayNames.unshift('Arnav');
+      // arrayNames.shift('Arnav');
+      // console.log(arrayNames);
+
+      //splice
+          var array=[1,2,3,4,5];
+          console.log(array.splice(2));
+
+          //slice
+          var array2=[1,2,3,4,5]
+          console.log(array2.slice(2));
+
+
+          console.log("----after-----");
+          console.log(array);
+          console.log(array2);
+    </script> 
+
+    
+  </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h1 id="demo" onclick="myFunction()">red</h1></br>
+<h1 id="demo1" onclick="myColor()">green</h1></br>
+<h1 id="demo2" onclick="myColorpage()">yellow</h1>
+</body>
+<script>
+function myFunction(){
+	if(document.getElementById("demo").style.backgroundColor == "red")
+	{
+	document.getElementById("demo").style.backgroundColor="white";
+	}
+	else{
+	document.getElementById("demo").style.backgroundColor="red";
+	}
+}
+function myColor(){
+	if(document.getElementById("demo1").style.backgroundColor == "green")
+	{
+	document.getElementById("demo1").style.backgroundColor="white";
+	}
+	else{
+	document.getElementById("demo1").style.backgroundColor="green";
+	}
+}
+function myColorpage(){
+	if(document.getElementById("demo2").style.backgroundColor == "yellow")
+	{
+	document.getElementById("demo2").style.backgroundColor="white";
+	}
+	else{
+	document.getElementById("demo2").style.backgroundColor="yellow";
+	}
+}
+</script>
+</html>
+
+

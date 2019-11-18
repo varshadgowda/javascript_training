@@ -1,0 +1,26 @@
+<html>
+    <head></head>
+    <body>
+        <div>
+            <form name='registration'>
+                <label for="userid">UserID</label>
+                <input type="text" name="userid" size="12" onblur="userid_validation(5,12)"/>
+                <label name = "errorUserID" id="errorUserID" style="display:none"></label>
+            </form>
+        </div>
+    </body>
+    <script>
+         function userid_validation(mx,my)
+            {
+                var uid = document.registration.userid;
+                var uid_len = uid.value.length;
+                document.getElementById('errorUserID').style.display = 'none';
+                document.getElementById('errorUserID').innerText= "";
+                    if (/^([A-Za-z]{5,12})$/.test(uid.value) === false) {
+                        document.getElementById('errorUserID').style.display = 'block';
+                        document.getElementById('errorUserID').innerText = "User Id should be character  / length be between 5 to 12 ";
+                        return false;
+                    }
+            }
+    </script>
+</html>

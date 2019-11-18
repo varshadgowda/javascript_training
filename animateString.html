@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript basic animation</title>
+        <meta charset="utf-8"> 
+    </head>
+    <body onload="animate_string('target')" 
+        <pre id="target"><span>Look at me move!</span></pre>  
+    </body>
+</html>
+<script>
+     
+    function animate_string(id) 
+    {
+        debugger;
+        var element = document.getElementById(id); 
+        var textNode = element.childNodes[0];
+        // var textNode1 = element.childNodes[1];
+        var text = textNode.firstChild.data;
+        // var text1 = textNode1.data;
+        setInterval(function () 
+            {
+                debugger;
+                var firstText = text[text.length - 1];
+                var secondText = text.substring(5, text.length - 1);
+                text = text[text.length - 1] + text.substring(0, text.length - 1); 
+                textNode.firstChild.data = text; 
+                // text1 = text1[text1.length - 1] + text1.substring(0, text1.length - 1); 
+                // textNode1.data=text1;
+            }, 1000); 
+    }
+</script>
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            function outer(){
+                debugger;
+                var b=10;
+                var c=100;
+                function inner(){
+                    debugger;
+                    var a=20;
+                    console.log("a=" + a + "b=" +b);
+                    a++;
+                    b++;
+                }
+                return inner;
+                console.log(inner);
+            }
+            var X = outer();
+            X();
+            X();
+            X();
+        </script>
+    </body>
+</html>
